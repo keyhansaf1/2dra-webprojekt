@@ -29,6 +29,16 @@ h1{
     gap: 15px;
     justify-content: center;
 }
+
+
+.MainNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
 footer{
     background-color: #111;
 }
@@ -46,4 +56,75 @@ footer{
     background-color: white;
     margin: 10px;
     border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover Effects on Social Media Icons */
+
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0,5s;
+}
+
+.MainNav{
+    margin: 30px 0;
+}
+
+.MainNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+.MainNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.MainNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .MainNav ul{
+        flex-direction: column;
+    }
+    .MainNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+.fa-square-facebook{
+    color: blue;
 }
